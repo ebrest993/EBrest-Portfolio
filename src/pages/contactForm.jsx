@@ -1,12 +1,12 @@
 import { useState } from 'react';
 // import './style.css';
 
-import { checkPassword, validateEmail } from '../utils/helpers';
+import { validateName, validateMessage, validateEmail } from '../utils/helpers';
 
 function Form() {
   const [email, setEmail] = useState('');
-  const [userName, setUserName] = useState('');
-  const [password, setPassword] = useState('');
+  const [fullName, setFullName] = useState('');
+  const [message, setMessage] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
 
   const handleInputChange = (e) => {
@@ -16,37 +16,44 @@ function Form() {
 
     if (inputType === 'email') {
       setEmail(inputValue);
-    } else if (inputType === 'userName') {
-      setUserName(inputValue);
+    } else if (inputType === 'fullName') {
+      setFullName(inputValue);
     } else {
-      setPassword(inputValue);
-    }
+      setMessage(inputValue);
+    };
   };
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
 
-    if (!validateEmail(email) || !userName) {
-      setErrorMessage('Email or username is invalid');
+    if (!validateEmail(email) || !fullName) {
+      setErrorMessage('Email or Name is invalid');
       return;
     }
-    if (!checkPassword(password)) {
+    if (!validateMessage(message)) {
       setErrorMessage(
-        `Choose a more secure password for the account: ${userName}`
+        `Please enter a message into the message field...`
       );
       return;
     }
-    alert(`Hello ${userName}`);
+    alert(`Hello ${fullName}`);
 
-    setUserName('');
-    setPassword('');
+    setFullName('');
+    setMessage('');
     setEmail('');
   };
 
   return (
     <div className="container text-center">
-      <h1>Hello {userName}</h1>
+      <h1>Hello {fullName}</h1>
       <form className="form" onSubmit={handleFormSubmit}>
+        <input
+          value={fullName}
+          name="fullName"
+          onChange={handleInputChange}
+          type="text"
+          placeholder="Full Name"
+        />
         <input
           value={email}
           name="email"
@@ -55,18 +62,11 @@ function Form() {
           placeholder="email"
         />
         <input
-          value={userName}
-          name="userName"
+          value={message}
+          name="message"
           onChange={handleInputChange}
           type="text"
-          placeholder="username"
-        />
-        <input
-          value={password}
-          name="password"
-          onChange={handleInputChange}
-          type="password"
-          placeholder="Password"
+          placeholder="Type message here..."
         />
         <button type="submit">Submit</button>
       </form>
