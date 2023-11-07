@@ -1,6 +1,4 @@
 import { useState } from 'react';
-// import './style.css';
-
 import { validateName, validateMessage, validateEmail } from '../utils/helpers';
 
 function Form() {
@@ -36,7 +34,7 @@ function Form() {
       );
       return;
     }
-    alert(`Hello ${fullName}`);
+    alert(`Thank you, your message has been sent!`);
 
     setFullName('');
     setMessage('');

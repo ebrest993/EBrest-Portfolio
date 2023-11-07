@@ -12,7 +12,7 @@ const ContactMe = () => {
 		}}
 		>
 			<h1>Send me an email!</h1>
-			<Form />
+				<Form />
 		</div>
 	)
 };

@@ -1,5 +1,3 @@
-// pages/signup.js
-
 import React from "react";
 
 const SignUp = () => {
@@ -12,7 +10,9 @@ const SignUp = () => {
 				height: "100vh",
 			}}
 		>
-			<h1>Sign Up</h1>
+			<h1>
+				Sign Up
+			</h1>
 		</div>
 	);
 };

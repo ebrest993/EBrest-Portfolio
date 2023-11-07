@@ -1,5 +1,3 @@
-// pages/team.js
-
 import React from "react";
 
 const Resume = () => {
@@ -12,7 +10,9 @@ const Resume = () => {
 				height: "100vh",
 			}}
 		>
-			<h1>Welcome to GeeksforGeeks Team</h1>
+			<h1>
+				Welcome to GeeksforGeeks Team
+			</h1>
 		</div>
 	);
 };
