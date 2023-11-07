@@ -2,7 +2,7 @@
 
 import React from "react";
 
-const Teams = () => {
+const Resume = () => {
 	return (
 		<div
 			style={{
@@ -17,4 +17,4 @@ const Teams = () => {
 	);
 };
 
-export default Teams;
+export default Resume;

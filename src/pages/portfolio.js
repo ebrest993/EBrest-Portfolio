@@ -2,7 +2,7 @@
 
 import React from "react";
 
-const Events = () => {
+const Portfolio = () => {
 	return (
 		<div
 			style={{
@@ -17,4 +17,4 @@ const Events = () => {
 	);
 };
 
-export default Events;
+export default Portfolio;

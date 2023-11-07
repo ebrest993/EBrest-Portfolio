@@ -2,7 +2,7 @@
 
 import React from "react";
 
-const AnnualReport = () => {
+const ContactMe = () => {
 	return (
 		<div
 			style={{
@@ -17,4 +17,4 @@ const AnnualReport = () => {
 	);
 };
 
-export default AnnualReport;
+export default ContactMe;

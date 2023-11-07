@@ -15,7 +15,9 @@ const Navbar = () => {
 		<>
 			<Nav>
 				<Bars />
-
+					<h1>
+						Elliott Brest
+					</h1>
 				<NavMenu>
 					<NavLink to="/aboutme" >
 						About Me
