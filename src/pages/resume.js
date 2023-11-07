@@ -11,7 +11,7 @@ const Resume = () => {
 			}}
 		>
 			<h1>
-				Welcome to GeeksforGeeks Team
+				Resume? We never paused?
 			</h1>
 		</div>
 	);
