@@ -6,16 +6,18 @@ const About = () => {
 	return (
 		<div
 			style={{
-				display: "flex",
+				display: "inline-block",
 				justifyContent: "centre",
 				alignItems: "centre",
 				height: "100vh",
 			}}
 		>
 			<h1>
-				GeeksforGeeks is a Computer Science portal
-				for geeks.
+				Elliott Brest
 			</h1>
+			<p>				
+					Elliott Brest has been developing for an extensive 6 months. He enjoys long walks on the beach - provided he remembered his sunscreen - and a lighthearted RomCom.
+			</p>
 		</div>
 	);
 };

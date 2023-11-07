@@ -8,10 +8,10 @@ import {
 } from "react-router-dom";
 import Home from "./pages";
 import About from "./pages/about";
-import Events from "./pages/events";
-import AnnualReport from "./pages/annual";
-import Teams from "./pages/team";
-import Blogs from "./pages/blogs";
+import Events from "./pages/portfolio";
+import AnnualReport from "./pages/contact";
+import Teams from "./pages/resume";
+// import Blogs from "./pages/blogs";
 import SignUp from "./pages/signup";
 
 function App() {
@@ -20,21 +20,21 @@ function App() {
 			<Navbar />
 			<Routes>
 				<Route path="/" element={<Home />} />
-				<Route path="/about" element={<About />} />
+				<Route path="/aboutme" element={<About />} />
 				<Route
-					path="/events"
+					path="/portfolio"
 					element={<Events />}
 				/>
 				<Route
-					path="/annual"
+					path="/contact"
 					element={<AnnualReport />}
 				/>
-				<Route path="/team" element={<Teams />} />
-				<Route path="/blogs" element={<Blogs />} />
+				<Route path="/resume" element={<Teams />} />
+				{/* <Route path="/resume" element={<Blogs />} />
 				<Route
 					path="/sign-up"
 					element={<SignUp />}
-				/>
+				/> */}
 			</Routes>
 		</Router>
 	);

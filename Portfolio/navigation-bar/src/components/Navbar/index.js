@@ -17,31 +17,31 @@ const Navbar = () => {
 				<Bars />
 
 				<NavMenu>
-					<NavLink to="/about" >
-						About
+					<NavLink to="/aboutme" >
+						About Me
 					</NavLink>
-					<NavLink to="/events" activeStyle>
-						Events
+					<NavLink to="/portfolio" activeStyle>
+						Portfolio
 					</NavLink>
-					<NavLink to="/annual" activeStyle>
-						Annual Report
+					<NavLink to="/contact" activeStyle>
+						Contact Me
 					</NavLink>
-					<NavLink to="/team" activeStyle>
-						Teams
+					<NavLink to="/resume" activeStyle>
+						Resume
 					</NavLink>
-					<NavLink to="/blogs" activeStyle>
+					{/* <NavLink to="/blogs" activeStyle>
 						Blogs
 					</NavLink>
 					<NavLink to="/sign-up" activeStyle>
 						Sign Up
-					</NavLink>
+					</NavLink> */}
 					{/* Second Nav */}
 					{/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}
 				</NavMenu>
 				<NavBtn>
-					<NavBtnLink to="/signin">
+					{/* <NavBtnLink to="/signin">
 						Sign In
-					</NavBtnLink>
+					</NavBtnLink> */}
 				</NavBtn>
 			</Nav>
 		</>

@@ -61,7 +61,7 @@ export const NavBtn = styled.nav`
 	align-items: center;
 	margin-right: 24px;
 	/* Third Nav */
-	/* justify-content: flex-end;
+	/*justify-content: flex-end;
 width: 100vw; */
 	@media screen and (max-width: 768px) {
 		display: none;
