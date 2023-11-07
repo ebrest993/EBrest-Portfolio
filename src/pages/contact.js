@@ -1,5 +1,3 @@
-// pages/annual.js
-
 import React from "react";
 
 const ContactMe = () => {
@@ -12,7 +10,7 @@ const ContactMe = () => {
 				height: "100vh",
 			}}
 		>
-			<h1>Annual Report</h1>
+			<h1>Send me an email!</h1>
 		</div>
 	);
 };

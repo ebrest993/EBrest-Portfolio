@@ -36,3 +36,21 @@
     transform: rotate(360deg);
   }
 }
+
+h3 {
+  font-size: medium;
+}
+
+.cards {
+  display: block;
+  width: 50%;
+  justify-content: center;
+  text-align: center;
+  margin-top: 1rem;
+  margin-left: 25%;
+  height: auto;
+}
+
+img {
+  max-width: 100%;
+}
