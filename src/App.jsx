@@ -6,13 +6,10 @@ import {
 	Routes,
 	Route,
 } from "react-router-dom";
-import Home from "./pages";
 import About from "./pages/about";
 import Events from "./pages/portfolio";
 import AnnualReport from "./pages/contact";
 import Teams from "./pages/resume";
-// import Blogs from "./pages/blogs";
-import SignUp from "./pages/signup";
 
 function App() {
 	return (
@@ -30,11 +27,6 @@ function App() {
 					element={<AnnualReport />}
 				/>
 				<Route path="/resume" element={<Teams />} />
-				{/* <Route path="/resume" element={<Blogs />} />
-				<Route
-					path="/sign-up"
-					element={<SignUp />}
-				/> */}
 			</Routes>
 		</Router>
 	);

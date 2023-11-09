@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { validateName, validateMessage, validateEmail } from '../utils/helpers';
+import { validateMessage, validateEmail } from '../utils/helpers';
 
 function Form() {
   const [email, setEmail] = useState('');
