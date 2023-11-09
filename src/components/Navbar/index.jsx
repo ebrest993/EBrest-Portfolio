@@ -20,13 +20,13 @@ const Navbar = () => {
 					<NavLink to="/aboutme" >
 						About Me
 					</NavLink>
-					<NavLink to="/portfolio" activeStyle>
+					<NavLink to="/portfolio" >
 						Portfolio
 					</NavLink>
-					<NavLink to="/contact" activeStyle>
+					<NavLink to="/contact" >
 						Contact Me
 					</NavLink>
-					<NavLink to="/resume" activeStyle>
+					<NavLink to="/resume" >
 						Resume
 					</NavLink>
 				</NavMenu>
